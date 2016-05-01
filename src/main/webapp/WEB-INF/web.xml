@@ -10,7 +10,17 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>main</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>main</servlet-name>
+        <servlet-class>com.zimmem.kubernets.demo.DubboServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>main</servlet-name>
+        <url-pattern>/dubbo</url-pattern>
     </servlet-mapping>
 
 
